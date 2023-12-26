@@ -91,3 +91,10 @@
     width: 100%;
     list-style: none;
 }
+.sub-children{
+    display: none;
+}
+.sub-menu:hover .sub-children{
+    display: block;
+    background-color: aqua;
+}
