@@ -1,6 +1,39 @@
-#para{
-    color: blue;
+*{
+    margin: 0;
+    padding: 0;
 }
-.para{
-    color: red;
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+}
+.left-col{
+    width: 50%;
+}
+.right-col{
+    width: 50%;
+}
+.right-col img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .left-col{
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .container{
+        flex-direction: column;
+    }
+    .left-col{
+        background-color: red;
+        color: #fff;
+    }
 }
